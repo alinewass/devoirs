@@ -1,0 +1,202 @@
+html, body {
+  margin:0px;
+  height:100%;
+}
+
+@font-face {
+    font-family: 'bonzai';
+    src: url('bonzai.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+  font-family: 'bonzai';
+  background-image: url(./dessin3.jpg);
+  background-size: 31%;
+  background-position:center right;
+  background-repeat: no-repeat;
+  margin: 0px;
+}
+
+header {
+  background-color: rgb(197, 31, 31);
+  padding: 5px;
+}
+
+header h1 {
+  font-family: 'bonzai';
+  font-style: italic;
+  text-align: right;
+  padding-right: 2em;
+  color: black;
+}
+
+
+/*ASIDE*/
+
+aside nav {
+  background-color: rgb(197, 31, 31);
+  position:fixed;
+  left:-20%;
+  width:18%;
+  height:100%;
+  top:0px;
+  transition:left 2s;
+}
+
+label {
+  z-index:2;
+  position:fixed;
+  padding:.5em;
+  left:0px;
+  transition:left 2s;
+}
+
+#ole {
+  display: none;
+}
+
+#ole + label::before {
+  content:"\01F300";
+  font-size: 60px;
+  color: black;
+  top: 0px;
+  position:inherit;
+}
+
+#ole:checked + label::before {
+  content:"\01F5F2";
+  top:0px;
+  position:inherit;
+}
+
+#ole:checked ~ nav {
+  left:0px;
+}
+
+#ole:checked + label {
+  left:20%;
+}
+
+aside nav ul {
+  color: black;
+  font-size: 22px;
+  list-style-type: none;
+  margin-top: 40%;
+  font-weight: bold;
+}
+
+aside nav li {
+  padding: 10%;
+
+}
+ aside nav a {
+  font-style: italic;
+  text-decoration: none;
+  color: black;
+  transition: color 1s;
+}
+
+aside nav a:hover {
+  color: white;
+}
+
+/*FOOTER*/
+
+footer {
+  background:black;
+  position: fixed;
+  width:100%;
+  font-style: italic;
+  margin: 0;
+  justify-content: center;
+  bottom: 0;
+}
+footer ul {
+  font-size: 14px;
+  text-align: center;
+}
+footer nav ul li{
+  font-size: 15px;
+  display: inline-block;
+  width: 14%;
+}
+
+footer nav ul li a {
+  text-decoration: none;
+  color: rgb(197, 31, 31);
+  transition: color 1s;
+  font-size: 20px;
+}
+
+footer nav a:hover {
+  color: white;
+}
+
+footer p {
+  color: rgb(197, 31, 31);
+  text-align: center;
+  font-size: 1.5em;
+  margin: 0;
+}
+
+/*MAIN*/
+
+
+main>h1 {
+  text-align: center;
+  font-style: italic;
+  text-decoration: underline;
+}
+
+main img {
+  width: 285px;
+  height: auto;
+  float: right;
+  display: inline;
+  margin-right: 65px;
+  position: absolute;
+  right: 10px;
+}
+main div img {
+  width: 220px;
+  height: auto;
+  float: left;
+  display: inline;
+  margin-left: 130px;
+  position: absolute;
+  left: 10px;
+  margin-top: 110px;
+}
+main section {
+  text-align: center, justify;
+  font-family: 'bonzai';
+  margin-left: 30%;
+  margin-right: 30%;
+  font-size: 22px;
+  border:3px double black;
+  padding: 1%;
+  padding-top: 0%;
+  padding-bottom: 10.6%;
+}
+
+section img {
+  width: 390px;
+  height: auto;
+  float: right;
+  display: inline;
+  margin-right: -50px;
+  position: absolute;
+  right: 10px;
+}
+
+section p img {
+  width: 189px;
+  height: auto;
+  float: right;
+  display: inline;
+  margin-right: 493px;
+  position: absolute;
+  right: 10px;
+}
